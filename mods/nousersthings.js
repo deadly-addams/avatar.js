@@ -1141,7 +1141,7 @@ elements.filter.tick = function(pixel) {
 				//if (!elements[newPixel.element].movable) continue;
 				if (!pixel.filter && elements[newPixel.element].movable) {
 					pixel.filter = newPixel.element;
-				}// else {continue;} // ???
+				} else if(!pixel.filter){continue;}
 				if ((
 					pixel.filter === newPixel.element ||
 					(pixel.filter === elements[newPixel.element].state && elements[newPixel.element].movable)||
