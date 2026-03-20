@@ -3095,7 +3095,8 @@ elements.false_vacuum_decay_bomb = {
         if (!isEmpty(pixel.x, pixel.y+1, true)){
             changePixel(pixel, "false_vacuum")
         }
-    }
+    },
+    excludeRandom: true
 }
 elements.false_vacuum = {
     color: "#b41b1b",
@@ -3145,7 +3146,8 @@ elements.false_vacuum = {
     },
     movable: false,
     hardness: 1,
-    updateOrder: -Infinity
+    updateOrder: -Infinity,
+    excludeRandom: true
 }
 let signInput = "Hello World!";
 saveElementMigrations.sign = function(pixel){
